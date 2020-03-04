@@ -118,28 +118,6 @@
           </configOptions>
         </configuration>
        </plugin>
-       
-       <plugin>
-            <artifactId>maven-resources-plugin</artifactId>
-            <version>3.1.0</version>
-            <executions>
-                <execution>
-                    <id>copy-resource-one</id>
-                    <phase>instal-testl</phase>
-                    <goals>
-                        <goal>1-copy-resources-1</goal>
-                    </goals>
-                    <configuration>
-			    <outputDirectory>${project.build.directory}/../../../../build-resources/</outputDirectory>
-                        <resources>
-                            <resource>
-                                <directory>${project.build.directory}/generated-python-bindings</directory>
-                            </resource>
-                        </resources>
-                    </configuration>
-                </execution>
-           </executions>
-       </plugin>
        <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
